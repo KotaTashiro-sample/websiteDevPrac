@@ -13,13 +13,12 @@
     padding: 20px;
     margin: 0 auto;
     vertical-align: middle;
-    
 }
 
 .hd-middle {
     flex: 50%;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .header image{
@@ -34,6 +33,20 @@
     color: black;
     font-size: 12px;
     font-weight: bold;
+}
+
+.nav-item {
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.mr-auto {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .main1 {
@@ -57,17 +70,16 @@
 }
 
 .footer {
-    height: 700px;
+    height: 40em;
     background-color: rgb(37, 62, 123);
 }
 
 .footer .row {
-    margin: 50px;
+    margin: 5%;
 }
 
 .footer .row div {
     flex: 25%;
-    text-align: center;
     color: white;
     margin-right: 20px;
 }
@@ -75,8 +87,37 @@
 .footer-row {
     display: flex;
     flex-flow: column;
+    text-align: left;
 }
 
 .footer-row .row {
     flex: calc(100/3%);
+    margin-top: 5%;
 }
+
+
+.footer-explanation {
+    font-size: 12px;
+}
+
+.footer-explanation ul {
+    margin-left: -2em;
+}
+
+.footer-explanation li {
+    padding-bottom: 1em;
+}
+
+.footer--explanation-title {
+    font-size: 15px;
+    text-align: left;
+}
+
+.footer-bottom-row {
+    margin-left: 50px;
+    text-align: left;
+}
+
+
+
+
