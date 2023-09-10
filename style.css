@@ -8,7 +8,6 @@
 }
 
 .header {
-    height: 80px;
     background-color: white;
     padding: 20px;
     margin: 0 auto;
@@ -17,8 +16,8 @@
 
 .hd-middle {
     flex: 50%;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
 .header image{
@@ -70,7 +69,6 @@
 }
 
 .footer {
-    height: 40em;
     background-color: rgb(37, 62, 123);
 }
 
@@ -109,7 +107,7 @@
 }
 
 .footer--explanation-title {
-    font-size: 15px;
+    font-size: 18px;
     text-align: left;
 }
 
