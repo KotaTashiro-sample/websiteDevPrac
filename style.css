@@ -49,21 +49,117 @@
 }
 
 .main1 {
-    background-color: antiquewhite;
-    height: 1000px;
+    background-color: #2F82F6;
+    height: 700px;
 }
 
-.main2 {
+.container h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 10%;
+    margin-top: 0%;
+    color: white;
+}
+
+.container p {
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 0%;
+}
+
+.container button {
+    color: white;
+    text-align: center;
+    width: 15%;
+    height: 4em;
+    margin-left: 42%;
+    margin-right: 43%;
+    background-color: #ff5151;
+    border-radius:30px;
+    box-shadow: none;
+    border: none;
+    margin-top: 2%;
+}
+
+.main2 .colmn-left {
+    width: 51%;
+    background-color: #E6F4F7;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: -5%;
+    border-radius: 10px;
+}
+
+.main2 .colmn-left .tag p {
+    color: #2F82F6;
+    size: 14px;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    padding-top: 8%;
+    font-weight: bold;
+}
+
+.main2-left-explanation p {
+    size: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 13%;
+}
+
+.main2-left-title {
+    font-size: 27px;
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+    color: black;
+}
+
+.main2-right-title {
+    background-color: #206FB8;
+    size: 23px;
+    color: white;
+    text-align: center;
+    width: 160%;
+    margin-right: 10%;
+    margin-top: -23%;
+    padding: 7%;
+    font-weight: bold;
+}
+
+.main2-right-item {
+    background-color: #E6F4F7;
+    size: 23px;
+    color: black;
+    text-align: left;
+    width: 160%;
+    margin-right: 20%;
+    margin-top: 15px;
+    padding: 7%;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.main3 {
     background-color: rgb(208, 255, 142);
     height: 1000px;
 }
 
-.main3 {
+.main4 {
     background-color: rgb(172, 201, 255);
     height: 1000px;
 }
 
-.main4 {
+.main5 {
     background-color: rgb(249, 172, 255);
     height: 1000px;
 }
