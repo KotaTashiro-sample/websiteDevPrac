@@ -20,10 +20,15 @@
 }
 
 .hd-middle {
+    font-size: 35px;
     flex: 50%;
     margin-left: 20%;
     margin-right: 20%;
     line-height: 55px;
+}
+
+.hd-middle a:hover {
+    color: #206FB8;
 }
 
 .header image{
@@ -48,8 +53,9 @@
 }
 
 .main1 {
-    background-color: #2F82F6;
-    height: 700px;
+    background-image: url(/image/main1.png);
+    background-position: 50%;
+    height: 850px;
 }
 
 .container h1 {
@@ -253,13 +259,15 @@
 
 .main5-row .colmn-left {
     width: 50%;
-    height: 350px;
-    background-color: bisque;
+    height: 445px;
+    background-image: url(/image/main5.png);
+    background-size: contain;
 }
 
 .main5-row .colmn-right {
     width: 50%;
-    padding: 2%;
+    padding-top: 5%;
+    padding-left: 5%;
     background-color: aliceblue;
 }
 
@@ -401,7 +409,9 @@
 }
 
 .footer {
-    background-color: rgb(37, 62, 123);
+    background-color: #283C66;
+    background-image: url(/image/footer.png);
+    background-size: 210%;
 }
 
 .footer .row {
@@ -422,7 +432,7 @@
 
 .footer-row .row {
     flex: calc(100/3%);
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 
@@ -443,13 +453,14 @@
     font-size: 18px;
     text-align: left;
     padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 .footer-bottom-row {
     margin-left: 50px;
     text-align: left;
+    height: 55px;
 }
-
 
 
 
