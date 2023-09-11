@@ -11,7 +11,7 @@
 
 .header {
     background-color: white;
-    padding: 20px;
+    padding-top: 20px;
     margin: 0 auto;
     vertical-align: middle;
     position: fixed;
@@ -19,32 +19,60 @@
     height: 110px;
 }
 
+.program {
+    position: relative;
+}
+
+.program:hover #sub-menu {
+    display: block;
+    height: 170px;
+}
+
+#sub-menu {
+    color: black;
+    overflow: hidden;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    background-color: white;
+    width: 200px;
+    height: 0;
+    transition: height 0.2s;
+}
+
+#sub-menu p:hover {
+    color: #206FB8;
+}
+
 .hd-middle {
     font-size: 35px;
-    flex: 50%;
-    margin-left: 20%;
-    margin-right: 20%;
+    flex: 80%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
     line-height: 55px;
+    text-align: center;
 }
 
 .hd-middle a:hover {
     color: #206FB8;
 }
 
-.header image{
-    flex: 25%;
-    padding: 100px;
+.header .header-image {
+    flex: 10%;
+    margin-left: 85px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .header button {
-    font-size: 30px;
-    border: none;
+    flex: 10%;
     background-color: white;
-    padding-right: 2%;
+    border: none;
+    margin-right: 70px;
 }
 
 .header a {
-    padding: 20px;
+    padding: 20px 20px 45px 20px;
     text-decoration: none;
     text-align: center;
     color: black;
@@ -91,6 +119,10 @@
     box-shadow: none;
     border: none;
     margin-top: 2%;
+}
+
+.container button:hover {
+    background-color: #FF904C;
 }
 
 .main2 .colmn-left {
@@ -179,35 +211,57 @@
     row-gap: 50px;
   }
   .grid-item {
+    display: flex;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #bfced1;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
     text-align: left;
     width: 350px;
     height: 130px;
     border-radius: 5px;
   }
 
-  .grid-item h2 {
-    font-size: 20px;
-    width: 90%;
-    margin-bottom: 0%;
-    padding-left: 30%;
+  .icon-part {
+    text-align: center;
+    padding-top: 5%;
+    margin: 5% 5% 5% 5%;
+    width: 70px;
+    height: 70px;
+    flex-flow: column;
+    background-color: #d8f8ff;
+    border-radius: 50%;
   }
 
-  .grid-item p {
-    font-size: 15px;
+  .content-part {
+    vertical-align: middle;
+    margin: 4% 0% 4% 0%;
+  }
+
+  .grid-item .content-part h2 {
+    font-size: 20px;
+    width: 200px;
+    margin-bottom: 0%;
+    padding-left: 10px;
+    align-items: center;
+  }
+
+  .grid-item .content-part p {
+    font-size: 13px;
     padding-bottom: 0%;
-    padding-left: 30%;
+    padding-left: 10px;
     margin: 1%;
   }
 
   .grid-item:hover {
     color: white;
     background-color: #206FB8;
+  }
+
+  .grid-item:hover .icon-part{
+    background-color: white;
   }
 
 
@@ -236,20 +290,25 @@
   .grid-item-main4 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #bfced1;
-    padding-top: 0%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 0%;
+    padding: 30px 18px 30px 18px;
     text-align: left;
     vertical-align: middle;
     width: 380px;
-    height: 400px;
+    height: 350px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .grid-item-main4 img {
     border-radius: 5px;
   }
 
-  .grid-item-main4 h2 {
-    margin-top: 0%;
-  }
+.grid-item-main4 h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    padding: 0px 18px 0px 18px;
+}
 
 .main5-row {
     display: flex;
@@ -296,8 +355,9 @@
 
 .main6-row .colmn-right {
     width: 48%;
-    height: 480px;
-    background-color: bisque
+    height: 597px;
+    background-image: url(/image/congra.png);
+    background-size: contain;
 }
 
 .main6-row .colmn-left-item {
@@ -316,16 +376,14 @@
     padding-left: 12%;
     padding-top: 4%;
     padding-bottom: 4%;
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 .apply-button {
     color: white;
     text-align: center;
-    width: 25%;
-    height: 4em;
-    margin-left: 42%;
-    margin-right: 43%;
+    width: 200px;
+    height: 60px;
     background-color: #206FB8;
     border-radius:30px;
     box-shadow: none;
@@ -335,11 +393,15 @@
     margin-top: 5%;
 }
 
+.apply-button:hover {
+    background-color: #1E96BA;
+}
+
 .main7 {
     margin-top: 10%;
     margin-left: 8%;
     margin-right: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 100px;
 }
 
 .main7 h1 {
@@ -360,6 +422,14 @@
     background-color: #F3F8F9;
 }
 
+.main7-row1 img{
+    top: 15%;
+    left: 40%;
+    width: 80px;
+    height: 80px;
+    margin: 50px 250px 0px 250px;
+}
+
 .main7-row1 .colmn-right {
     width: 46%;
     border-radius: 3%;
@@ -368,14 +438,15 @@
 
 .main7-row1 .main7-colmn-item {
     margin: 0;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 8%;
+    padding-left: 8%;
     font-weight: bold;
     text-align: center;
     width: 100%;
     font-style: italic;
+    font-size: 20px;
 }
 
 .main7-row2 {
@@ -384,14 +455,14 @@
 }
 
 .main7-row2 .colmn-left {
-    margin-top: -2%;
+    margin-top: -4%;
     width: 46%;
     margin-right: 2%;
     text-align: center;
 }
 
 .main7-row2 .colmn-right {
-    margin-top: -2%;
+    margin-top: -4%;
     width: 46%;
     text-align: center;
 }
@@ -411,11 +482,11 @@
 .footer {
     background-color: #283C66;
     background-image: url(/image/footer.png);
-    background-size: 210%;
+    background-size: 225%;
 }
 
 .footer .row {
-    margin: 5%;
+    margin: 112px;
 }
 
 .footer-row {
@@ -425,7 +496,7 @@
 }
 
 .footer .row div {
-    flex: 25%;
+    flex: 30%;
     color: white;
     margin-right: 20px;
 }
@@ -433,6 +504,10 @@
 .footer-row .row {
     flex: calc(100/3%);
     margin-top: 6%;
+}
+
+.footer-row .row-middle {
+    margin: 4px 70px 4px 70px;
 }
 
 
@@ -457,9 +532,9 @@
 }
 
 .footer-bottom-row {
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-bottom: 50px;
     text-align: left;
-    height: 55px;
 }
 
 
