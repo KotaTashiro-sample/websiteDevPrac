@@ -150,9 +150,56 @@
 }
 
 .main3 {
-    background-color: rgb(208, 255, 142);
-    height: 1000px;
+    background-color: #E6F4F7;
+    margin-top: 8%;
 }
+
+.main3 h1 {
+    font-size: 30px;
+    padding-left: 8%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #E6F4F7;
+    height: 550px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 10px;
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #bfced1;
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0%;
+    text-align: left;
+    vertical-align: middle;
+    width: 350px;
+    height: 130px;
+    border-radius: 5px;
+  }
+
+  .grid-item h2 {
+    font-size: 20px;
+    width: 90%;
+    margin-bottom: 0%;
+    padding-left: 30%;
+  }
+
+  .grid-item p {
+    font-size: 15px;
+    padding-bottom: 0%;
+    padding-left: 30%;
+    margin: 1%;
+  }
+
 
 .main4 {
     background-color: rgb(172, 201, 255);
