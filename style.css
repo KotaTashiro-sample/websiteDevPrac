@@ -1,8 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0% ;
 }
+
+.scroll-up {
+    text-align: right;
+    z-index: 999;
+    position: fixed;
+    right:30px;
+    bottom:50px;
+}
+
+.scroll-up .scroll-up-button {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #206FB8;
+    border: none;
+    width: 47px;
+    height: 45px;
+    border-radius: 50%;
+    align-items: right;
+}
+
+.scroll-up .scroll-up-button:hover{
+    background-color: #1E96BA;
+}
+
+
 
 .row {
     display: flex;
