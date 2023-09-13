@@ -213,8 +213,6 @@ html {
     color: white;
 }
 
-
-
 .row {
     display: flex;
     vertical-align: middle;
@@ -574,14 +572,17 @@ html {
 
 .main6-row .colmn-left {
     width: 48%;
+    height: auto;
     padding: 2%;
     background-color: #F9F8F8;
 }
 
 .main6-row .colmn-right {
     width: 48%;
-    height: 597px;
-    background-image: url(/image/congra.png);
+    height: auto;
+}
+
+#congra-img {
     background-size: contain;
 }
 
@@ -596,7 +597,19 @@ html {
 }
 
 .main6-row .colmn-left-item .attention {
+    color: black;
     background-color: white;
+    font-weight: bold;
+    padding-left: 12%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.attention-change {
+    color: white;
+    background-color:#206FB8;
     font-weight: bold;
     padding-left: 12%;
     padding-top: 4%;

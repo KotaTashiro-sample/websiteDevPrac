@@ -114,9 +114,44 @@ function go_back(){
 const attention1 = document.getElementById("attention1");
 const attention1_pop = document.getElementById("attention1-pop");
 
+const attention2 = document.getElementById("attention2");
+const attention2_pop = document.getElementById("attention2-pop");
+
+const attention3 = document.getElementById("attention3");
+const attention3_pop = document.getElementById("attention3-pop");
+
+const attention4 = document.getElementById("attention4");
+const attention4_pop = document.getElementById("attention4-pop");
+
+
 attention1.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
+    attention1.classList.toggle('attention-change');
+    attention1.classList.toggle('attention');
     attention1_pop.classList.toggle('hidden');
 });
+
+attention2.addEventListener('click', () => {
+    //   // ボタンクリックでhiddenクラスを付け外しする
+    attention2.classList.toggle('attention-change');
+    attention2.classList.toggle('attention');
+    attention2_pop.classList.toggle('hidden');
+});
+
+attention3.addEventListener('click', () => {
+    //   // ボタンクリックでhiddenクラスを付け外しする
+    attention3.classList.toggle('attention-change');
+    attention3.classList.toggle('attention');
+    attention3_pop.classList.toggle('hidden');
+});
+
+attention4.addEventListener('click', () => {
+    //   // ボタンクリックでhiddenクラスを付け外しする
+    attention4.classList.toggle('attention-change');
+    attention4.classList.toggle('attention');
+    attention4_pop.classList.toggle('hidden');
+});
+
+
 
 
