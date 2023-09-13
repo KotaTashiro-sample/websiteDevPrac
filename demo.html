@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="demo.css">
+    </head>
+    
+    <body>
+
+        <div class="image-display">
+            <div class="button-div-left">
+                <input class="image-button" id="back" type="button" value="◀︎" onclick="go_back()">
+            </div>
+            
+            <img id="mypic" src="/image/person1.png" width="400" height="300">
+            <div class="button-div-right">
+                <input class="image-button" id="forward" type="button" value="▶︎" onclick="go_forward()">
+            </div>
+            
+        </div>
+        
+            <script>
+            var pics_src = new Array("/image/person1.png","/image/person2.png","/image/person3.png");
+            var num = 0;
+
+            function go_forward(){
+                if (num == 2) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+
+            function go_back(){
+                if (num == 0) {
+                    num = 2;
+                }
+                else {
+                    num --;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+            </script>
+    </body>
+</html>

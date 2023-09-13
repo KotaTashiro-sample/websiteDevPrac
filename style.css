@@ -10,7 +10,7 @@ html {
 
 .scroll-up {
     text-align: right;
-    z-index: 999;
+    z-index: 50;
     position: fixed;
     right:30px;
     bottom:50px;
@@ -31,6 +31,186 @@ html {
 
 .scroll-up .scroll-up-button:hover{
     background-color: #1E96BA;
+}
+
+.side-bar {
+    overflow: scroll;
+    scroll-behavior: smooth;
+    position: fixed;
+    background-color: #FAFAFA;
+    z-index: 70;
+    width: 500px;
+    height: 783px;
+    right: 0px;
+    padding: 30px 50px 30px 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.side-logo {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.side-text {
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#side_bar_button_back {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: #206FB8;
+    border: none;
+    width: 47px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.picture-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 264px;
+    padding-bottom: 20%;
+    column-gap: 2px;
+    text-align: center;
+}
+
+.picture-grid-item {
+    display: flex;
+    border: none;
+    text-align: center;
+    width: 123px;
+    height: 123px;
+    padding: 0px 5px 10px 5px;
+    /* transition: all .3s; */
+    overflow: hidden;
+}
+
+.picture-grid-item img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.picture-grid-item button {
+    background: transparent;
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+.picture-grid-item img:hover {
+    transform: scale(1.1);
+}
+
+.map-image {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.map-image img {
+    width: 390px;
+    height: 239px;
+}
+
+.facebook-link {
+    text-align: center;
+}
+
+.facebook-link a {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.facebook-link a:hover {
+    color: #206FB8;
+}
+
+
+.image-display {
+    background-color: rgba(0, 0, 0, .5);;
+    z-index: 65;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.image-display-middle {
+    display: flex;
+    flex: 70%;
+    position: absolute;
+    height: 100%;
+    width: 703px;
+    z-index: 100;
+    left: 24%;
+    right: 24%;
+}
+
+.displayimage-backbutton {
+    position: absolute;
+    text-align: right;
+    color: rgb(193, 193, 193);
+    width: 703px;
+    height: 50px;
+}
+
+.image-backbutton {
+    color: #d3d3d3;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    margin-top: 13px;
+}
+
+.image-backbutton:hover{
+    color: white;
+}
+
+.displayimage img{
+    margin-top: 48px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.change-img-button {
+    font-size: 30px;
+    position: absolute;
+    opacity: 0.65;
+    margin: 0;
+    top: 50%;
+    margin-top: -55px;
+    padding: 0;
+    width: 90px;
+    height: 110px;
+    -webkit-tap-highlight-color: transparent;
+    color: #d3d3d3;
+    background: none;
+    border: none;
+}
+
+#toback-button {
+    left: 0px;
+}
+
+#tofoward-button {
+    right: 0px;
+}
+
+.change-img-button:hover{
+    color: white;
 }
 
 
@@ -244,6 +424,7 @@ html {
     column-gap: 50px;
     row-gap: 50px;
   }
+
   .grid-item {
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);
@@ -330,6 +511,7 @@ html {
     column-gap: 25px;
     row-gap: 50px;
   }
+
   .grid-item-main4 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #bfced1;
