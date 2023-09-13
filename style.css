@@ -602,6 +602,17 @@ html {
     padding-top: 4%;
     padding-bottom: 4%;
     margin-top: 40px;
+    cursor: pointer;
+}
+
+.main6-row .colmn-left-item .attention-pop {
+    background-color: white;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: left;
 }
 
 .apply-button {
