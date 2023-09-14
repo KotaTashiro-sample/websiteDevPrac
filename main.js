@@ -123,30 +123,81 @@ const attention3_pop = document.getElementById("attention3-pop");
 const attention4 = document.getElementById("attention4");
 const attention4_pop = document.getElementById("attention4-pop");
 
+const bell1 = document.getElementById("bell1");
+const bell2 = document.getElementById("bell2");
+const bell3 = document.getElementById("bell3");
+const bell4 = document.getElementById("bell4");
+
 
 attention1.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
     attention1.classList.toggle('active-attention');
-    // attention1.classList.toggle('attention');
+    bell1.classList.toggle('fa-bell-slash');
     attention1_pop.classList.toggle('active-attention-pop');
+
+    attention2.classList.remove('active-attention');
+    attention3.classList.remove('active-attention');
+    attention4.classList.remove('active-attention');
+    attention2_pop.classList.remove('active-attention-pop');
+    attention3_pop.classList.remove('active-attention-pop');
+    attention4_pop.classList.remove('active-attention-pop');
+
+    bell2.classList.remove('fa-bell-slash');
+    bell3.classList.remove('fa-bell-slash');
+    bell4.classList.remove('fa-bell-slash');
 });
 
 attention2.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
     attention2.classList.toggle('active-attention');
+    bell2.classList.toggle('fa-bell-slash');
     attention2_pop.classList.toggle('active-attention-pop');
+
+    attention1.classList.remove('active-attention');
+    attention3.classList.remove('active-attention');
+    attention4.classList.remove('active-attention');
+    attention1_pop.classList.remove('active-attention-pop');
+    attention3_pop.classList.remove('active-attention-pop');
+    attention4_pop.classList.remove('active-attention-pop');
+    bell1.classList.remove('fa-bell-slash');
+    bell3.classList.remove('fa-bell-slash');
+    bell4.classList.remove('fa-bell-slash');
 });
 
 attention3.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
     attention3.classList.toggle('active-attention');
+    bell3.classList.toggle('fa-bell-slash');
     attention3_pop.classList.toggle('active-attention-pop');
+
+    attention1.classList.remove('active-attention');
+    attention2.classList.remove('active-attention');
+    attention4.classList.remove('active-attention');
+    attention1_pop.classList.remove('active-attention-pop');
+    attention2_pop.classList.remove('active-attention-pop');
+    attention4_pop.classList.remove('active-attention-pop');
+
+    bell1.classList.remove('fa-bell-slash');
+    bell2.classList.remove('fa-bell-slash');
+    bell4.classList.remove('fa-bell-slash');
 });
 
 attention4.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
     attention4.classList.toggle('active-attention');
+    bell4.classList.toggle('fa-bell-slash');
     attention4_pop.classList.toggle('active-attention-pop');
+
+    attention1.classList.remove('active-attention');
+    attention2.classList.remove('active-attention');
+    attention3.classList.remove('active-attention');
+    attention1_pop.classList.remove('active-attention-pop');
+    attention2_pop.classList.remove('active-attention-pop');
+    attention3_pop.classList.remove('active-attention-pop');
+
+    bell1.classList.remove('fa-bell-slash');
+    bell2.classList.remove('fa-bell-slash');
+    bell3.classList.remove('fa-bell-slash');
 });
 
 

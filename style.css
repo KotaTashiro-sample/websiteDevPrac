@@ -73,8 +73,18 @@ html {
     background-color: #206FB8;
     border: none;
     width: 47px;
-    height: 45px;
+    height: 47px;
     border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#side_bar_button_back:hover {
+    transform:rotate(180deg);
+}
+
+.cursor-point {
+    cursor: pointer;
 }
 
 .picture-grid {
@@ -616,13 +626,18 @@ html {
     color: black;
     background-color: white;
     font-weight: bold;
+    padding: 4% 4%;
     padding-top: 4%;
     padding-bottom: 4%;
     margin-top: 40px;
     cursor: pointer;
     transition: 0.3s;
     width: 100%;
-    text-align: center;
+    text-align: left;
+}
+
+.attention i {
+    padding-right: 3%;
 }
 
 .active-attention {
