@@ -43,7 +43,11 @@ html {
     height: 783px;
     right: 0px;
     padding: 30px 50px 30px 50px;
+    transition: 0.3s;
+    transform: translateX(100%);
 }
+
+
 
 .hidden {
     display: none;
@@ -220,14 +224,15 @@ html {
 
 .header {
     background-color: white;
-    padding-top: 20px;
     margin: 0 auto;
     vertical-align: middle;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     width: 100%;
-    height: 110px;
+    height: 100px;
     z-index: 2;
     box-shadow: 1px 1px 10px 2px #6b6b6b;
+    align-items: center;
 }
 
 .program {
@@ -294,7 +299,7 @@ html {
 .main1 {
     background-image: url(/image/main1.png);
     background-position: 50%;
-    height: 850px;
+    height: 750px;
 }
 
 .container h1 {
@@ -304,7 +309,7 @@ html {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    padding-top: 10%;
+    padding-top: 5%;
     margin-top: 0%;
     color: white;
 }
@@ -337,13 +342,25 @@ html {
     background-color: #FF904C;
 }
 
+.main2 {
+    display: flex;
+    margin-top: -4%;
+    height: 450px;
+}
+
 .main2 .colmn-left {
-    width: 51%;
+    flex: 70%;
     background-color: #E6F4F7;
-    margin-left: 8%;
-    margin-right: 5%;
-    margin-top: -5%;
+    margin-left: 5%;
     border-radius: 10px;
+    height: 100%;
+}
+
+.main2 .colmn-right {
+    flex: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
 }
 
 .main2 .colmn-left .tag p {
@@ -367,9 +384,7 @@ html {
     font-weight: bold;
     text-align: left;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 0%;
+    margin: 2% 10% 4% 10%;
     color: black;
 }
 
@@ -378,22 +393,20 @@ html {
     size: 23px;
     color: white;
     text-align: center;
-    width: 160%;
+    width: 100%;
     margin-right: 10%;
-    margin-top: -23%;
-    padding: 7%;
+    padding: 5%;
     font-weight: bold;
 }
 
 .main2-right-item {
     background-color: #E6F4F7;
-    size: 23px;
+    font-size: 13px;
     color: black;
     text-align: left;
-    width: 160%;
-    margin-right: 20%;
+    width: 100%;
     margin-top: 15px;
-    padding: 7%;
+    padding: 5%;
     font-weight: bold;
     vertical-align: middle;
 }
@@ -401,6 +414,7 @@ html {
 .main3 {
     background-color: #E6F4F7;
     margin-top: 8%;
+    width: 100%;
 }
 
 .main3 h1 {
@@ -414,13 +428,14 @@ html {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #E6F4F7;
+    width: 82%;
     height: 550px;
     margin-left: 8%;
     margin-right: 8%;
     /* padding: 10px; */
     padding-bottom: 20%;
-    column-gap: 50px;
-    row-gap: 50px;
+    column-gap: 5%;
+    row-gap: 9%;
   }
 
   .grid-item {
@@ -432,7 +447,7 @@ html {
     padding-right: 5%;
     padding-bottom: 5%;
     text-align: left;
-    width: 350px;
+    width: 100%;
     height: 130px;
     border-radius: 5px;
     transition: all .3s;
@@ -567,66 +582,77 @@ html {
     display: flex;
     flex-flow: row;
     text-align: left;
+    height: auto;
 }
 
 
 .main6-row .colmn-left {
-    width: 48%;
-    height: auto;
+    width: 100%;
     padding: 2%;
     background-color: #F9F8F8;
 }
 
 .main6-row .colmn-right {
-    width: 48%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 #congra-img {
-    background-size: contain;
+    height: 100%;
+    width: 100%;
+    object-fit: over;
 }
 
 .main6-row .colmn-left-item {
-    margin-left: 4%;
-    margin-top: 4%;
-    margin-right: 4%;
+    margin: 4%;
+    width: 92%;
 }
 
 .main6-row .colmn-left-item h1{
     margin-bottom: 2%;
 }
 
-.main6-row .colmn-left-item .attention {
+.attention {
     color: black;
     background-color: white;
     font-weight: bold;
-    padding-left: 12%;
     padding-top: 4%;
     padding-bottom: 4%;
     margin-top: 40px;
     cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
 }
 
-.attention-change {
+.active-attention {
     color: white;
     background-color:#206FB8;
-    font-weight: bold;
-    padding-left: 12%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    margin-top: 40px;
-    cursor: pointer;
+    width: auto;
 }
 
-.main6-row .colmn-left-item .attention-pop {
+.attention-pop {
     background-color: white;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: left;
+    transition: 0.3s;
+    opacity: 0%;
+    height: 0px;
+    pointer-events: none;
+}
+
+.attention-pop p {
     padding-top: 4%;
     padding-bottom: 4%;
-    text-align: left;
 }
+
+.active-attention-pop {
+    opacity: 100%;
+    height: fit-content;
+}
+
 
 .apply-button {
     color: white;
@@ -662,6 +688,8 @@ html {
 .main7-row1 {
     display: flex;
     flex-flow: row;
+    height: 370px;
+    height: fit-content;
 }
 
 
@@ -672,12 +700,20 @@ html {
     background-color: #F3F8F9;
 }
 
+.main7-image {
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
 .main7-row1 img{
     top: 15%;
     left: 40%;
     width: 80px;
     height: 80px;
-    margin: 50px 250px 0px 250px;
+    /* margin: 50px 250px 0px 250px; */
+    text-align: center;
 }
 
 .main7-row1 .colmn-right {
@@ -705,14 +741,14 @@ html {
 }
 
 .main7-row2 .colmn-left {
-    margin-top: -4%;
+    margin-top: -2%;
     width: 46%;
     margin-right: 2%;
     text-align: center;
 }
 
 .main7-row2 .colmn-right {
-    margin-top: -4%;
+    margin-top: -2%;
     width: 46%;
     text-align: center;
 }

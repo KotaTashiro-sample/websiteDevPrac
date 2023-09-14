@@ -11,13 +11,13 @@ const side_bar = document.getElementById("side-bar");
 
 side_bar_button.addEventListener('click', () => {
 //   // ボタンクリックでhiddenクラスを付け外しする
-  side_bar.classList.remove('hidden');
+  side_bar.style.transform = "translateX(0%)";
 });
 
 // サイドバーボタン閉じる
 const side_bar_button_back = document.getElementById("side_bar_button_back");
 side_bar_button_back.addEventListener('click', () => {
-    side_bar.classList.add('hidden');
+    side_bar.style.transform = "translateX(100%)";
 });
 
 
@@ -126,29 +126,26 @@ const attention4_pop = document.getElementById("attention4-pop");
 
 attention1.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
-    attention1.classList.toggle('attention-change');
-    attention1.classList.toggle('attention');
-    attention1_pop.classList.toggle('hidden');
+    attention1.classList.toggle('active-attention');
+    // attention1.classList.toggle('attention');
+    attention1_pop.classList.toggle('active-attention-pop');
 });
 
 attention2.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
-    attention2.classList.toggle('attention-change');
-    attention2.classList.toggle('attention');
-    attention2_pop.classList.toggle('hidden');
+    attention2.classList.toggle('active-attention');
+    attention2_pop.classList.toggle('active-attention-pop');
 });
 
 attention3.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
-    attention3.classList.toggle('attention-change');
-    attention3.classList.toggle('attention');
-    attention3_pop.classList.toggle('hidden');
+    attention3.classList.toggle('active-attention');
+    attention3_pop.classList.toggle('active-attention-pop');
 });
 
 attention4.addEventListener('click', () => {
     //   // ボタンクリックでhiddenクラスを付け外しする
-    attention4.classList.toggle('attention-change');
-    attention4.classList.toggle('attention');
-    attention4_pop.classList.toggle('hidden');
+    attention4.classList.toggle('active-attention');
+    attention4_pop.classList.toggle('active-attention-pop');
 });
 
